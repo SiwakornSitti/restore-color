@@ -1,0 +1,8 @@
+/* Force remove CSS filters globally */
+*,
+*::before,
+*::after {
+  filter: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+}

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Force Remove CSS Filters",
+  "version": "1.0",
+  "description": "Injects CSS to force filter: none !important on page elements (tries to cover shadow roots and same-origin iframes).",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/script.js"],
+      "css": ["content/styles.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
